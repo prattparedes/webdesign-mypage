@@ -1,9 +1,9 @@
 <template>
-  <nav class="bg-[none]">
+  <nav class="bg-transparent fixed left-0 right-0 z-10">
     <div class="max-w-[1140px] flex mx-auto justify-between items-center p-5">
-      <figure>
+      <figure class="">
         <img src="" alt="LOGO" />
-      </figure>
+      </figure> 
       <ul class="flex justify-between w-[300px] items-center">
         <li >
           <a class="hover:bg-[lightgray] px-4 py-2 rounded-full" href="">Demos</a>
