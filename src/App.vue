@@ -1,13 +1,13 @@
 <script setup>
-import NavBarVue from './components/NavBar.vue';
-import PageTitleVue from './components/PageTitle.vue';
+import CoreFeatures from "./components/CoreFeatures.vue";
+import NavBarVue from "./components/NavBar.vue";
+import PageTitleVue from "./components/PageTitle.vue";
 </script>
 
 <template>
-<NavBarVue/>
-<PageTitleVue/>
+  <NavBarVue />
+  <PageTitleVue />
+  <CoreFeatures />  
 </template>
 
-<style>
-
-</style>
+<style></style>
