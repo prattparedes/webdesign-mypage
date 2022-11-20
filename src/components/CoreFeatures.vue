@@ -1,14 +1,40 @@
 <template>
-  <div id="features" class="h-[60vh] flex justify-center align-centerflex-col">
-    <div>
-      <h1>Amazing web design features</h1>
+  <div id="features" class="h-[60vh] flex justify-center align-center flex-col items-center">
+    <div class="text-center">
+      <h1 class="text-[40px]">Amazing web design features</h1>
     </div>
-    <div class="flex">
-      <div class="flex flex-col bg-[lightblue]">
-        <h3>Icon</h3>
-        <h3>
-            Responsive Design
-        </h3>
+    <div class="flex flex-wrap h-[100%] max-w-1100 ">
+      <div class="flex flex-wrap text-center w-[25%] h-[50%] p-5 border-[1px] border-[red] rounded-lg bg-[lightblue] justify-center items-center mt-4">
+        <div class="flex flex-col h-[40%] w-[50%] items-center justify-center">
+          <font-awesome-icon icon="fa-solid fa-user-secret" class="text-[60px]"/>
+          <h3 class="text-3xl mt-2">
+              Responsive Design
+          </h3>
+        </div>
+      </div>
+      <div class="flex flex-wrap text-center w-[25%] h-[50%] p-5 border-[1px] border-[red] rounded-lg bg-[lightblue] justify-center items-center mt-4">
+        <div class="flex flex-col h-[40%] w-[50%] items-center justify-center">
+          <font-awesome-icon icon="fa-solid fa-user-secret" class="text-[60px]"/>
+          <h3 class="text-3xl mt-2">
+              Responsive Design
+          </h3>
+        </div>
+      </div>
+      <div class="flex flex-wrap text-center w-[25%] h-[50%] p-5 border-[1px] border-[red] rounded-lg bg-[lightblue] justify-center items-center mt-4">
+        <div class="flex flex-col h-[40%] w-[50%] items-center justify-center">
+          <font-awesome-icon icon="fa-solid fa-user-secret" class="text-[60px]"/>
+          <h3 class="text-3xl mt-2">
+              Responsive Design
+          </h3>
+        </div>
+      </div>
+      <div class="flex flex-wrap text-center w-[25%] h-[50%] p-5 border-[1px] border-[red] rounded-lg bg-[lightblue] justify-center items-center mt-4">
+        <div class="flex flex-col h-[40%] w-[50%] items-center justify-center">
+          <font-awesome-icon icon="fa-solid fa-user-secret" class="text-[60px]"/>
+          <h3 class="text-3xl mt-2">
+              Responsive Design
+          </h3>
+        </div>
       </div>
     </div>
   </div>
