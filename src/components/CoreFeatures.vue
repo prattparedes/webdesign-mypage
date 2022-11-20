@@ -1,6 +1,7 @@
 <template>
   <div id="features" class="h-[70vh] flex justify-center align-center flex-col items-center bg-[cream]">
     <div class="text-center">
+      <h3 class="text-[blue] font-bold">Principal Features</h3>
       <h1 class="text-[40px] font-extrabold">Amazing web design features</h1>
     </div>
     <div class="flex flex-wrap max-w-1100 space-x-4 justify-center mt-8">
