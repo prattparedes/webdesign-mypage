@@ -50,7 +50,7 @@
 </template>
 
 <script setup>
-import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
+
 </script>
 
 <style lang="scss" scoped></style>
