@@ -27,8 +27,9 @@ const routes = [
 
 //Crear Objeto Rutas de Vue Router -- -Objeto de VR
 const router = createRouter({
-  history: createWebHashHistory(),
   routes,
+  history: createWebHashHistory(),
+  mode: "history",
 });
 
 /* import the fontawesome core */
