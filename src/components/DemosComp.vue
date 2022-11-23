@@ -3,7 +3,8 @@
     id="demos"
     class="py-10 bg-[black] text-white flex justify-center items-center flex-col"
   >
-    <h1 class="text-[40px] mt-20 mb-10">See our principal Demo Pages</h1>
+  <h3 class="text-[blue] font-bold">Demos</h3>
+    <h1 class="text-[40px] mt-4 mb-10">See our principal Demo Pages</h1>
     <div class="w-[100%] flex flex-wrap justify-center mt-40">
       <div
         class="h-[600px] w-[40%] bg-[red] relative top-[-120px] group overflow-hidden"
