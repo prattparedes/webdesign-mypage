@@ -6,21 +6,21 @@
       </figure> 
       <ul class="flex justify-between w-[300px] items-center">
         <li >
-          <a class="hover:bg-[lightgray] px-4 py-2 rounded-full" href="">Demos</a>
+          <a class="hover:bg-[lightgray] px-4 py-2 rounded-full" href="#demos">Demos</a>
         </li>
         <li >
-          <a class="hover:bg-[lightgray] px-4 py-2 rounded-full" href="">Pricing</a>
+          <a class="hover:bg-[lightgray] px-4 py-2 rounded-full" href="#pricing">Pricing</a>
         </li>
         <li >
-          <a class="hover:bg-[lightgray] px-4 py-2 rounded-full" href="">Contact</a>
+          <a class="hover:bg-[lightgray] px-4 py-2 rounded-full" href="#contact">Contact</a>
         </li>
       </ul>
       <ul class="flex space-x-4 items-center">
         <li >
-          <a class="hover:bg-[lightgray] px-4 py-2 rounded-full" href="">Log In</a>
+          <router-link to="/login" class="hover:bg-[lightgray] px-4 py-2 rounded-full" href="">Log In</router-link>
         </li>
         <li>
-          <button class="bg-[#242424] px-4 py-2 text-white"><a href="">Register for Free</a></button>
+          <button class="bg-[#242424] px-4 py-2 text-white"><router-link to="/register" href="">Register for Free</router-link></button>
         </li>
       </ul>
     </div>
