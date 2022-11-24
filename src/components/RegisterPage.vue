@@ -41,7 +41,6 @@ function saveUser() {
     name: user.name,
     email: user.email,
     password: user.password,
-    subscribed: false,
   };
   
   console.log(data)
@@ -50,7 +49,7 @@ function saveUser() {
     .then((response) => {
       user.id = response.data.id;
       console.log(response.data);
-      user.submitted = true;
+      // user.submitted = true;
     })
     .catch((e) => {
       console.log(e);

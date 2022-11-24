@@ -11,10 +11,10 @@ var corsOptions = {
 app.use(cors(corsOptions));
 
 //calling Sync
-const db = require("./app/models");
-db.sequelize.sync({ force: true }).then(() => {
-  console.log("Drop and re-sync db.");
-});
+// const db = require("./app/models");
+// db.sequelize.sync({ force: true }).then(() => {
+//   console.log("Drop and re-sync db.");
+// });
 
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
@@ -22,12 +22,8 @@ app.use(bodyParser.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// simple route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Pratt's application." });
-});
-
-require("./app/routes/user.routes.js")(app);
+// Routes
+app.use(require('./app/routes/user.routes'))
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;

@@ -1,38 +1,35 @@
-const db = require("../models");
-const User = db.user;
-const Op = db.Sequelize.Op;
+const { Pool } = require("pg");
 
-// Create and Save a new Tutorial
-exports.create = (req, res) => {
-  
+const pool = new Pool({
+  host: "localhost",
+  user: "postgres",
+  password: "miauri123",
+  database: "myweb",
+  port: "5432",
+});
+
+const getUsers = async (req, res) => {
+  const response = await pool.query("SELECT * FROM accounts");
+  res.status(200).json(response.rows);
 };
 
-// Retrieve all Tutorials from the database.
-exports.findAll = (req, res) => {
-  
+const getUserById = async (req, res) => {
+  const id = req.params.id;
+  const response = await pool.query(`SELECT * FROM accounts WHERE id = ${id}`);
+  res.json(response.rows);
 };
 
-// Find a single Tutorial with an id
-exports.findOne = (req, res) => {
-  
+const createUser = async (req, res) => {
+  const user = req.body
+    const response = await pool.query(
+      `INSERT INTO accounts (name, email, password) VALUES ('${user.name}', '${user.email}', '${user.password}')`,
+    );
+  console.log(response);
+  res.send("user created successfully" + response.rows);
 };
 
-// Update a Tutorial by the id in the request
-exports.update = (req, res) => {
-  
-};
-
-// Delete a Tutorial with the specified id in the request
-exports.delete = (req, res) => {
-  
-};
-
-// Delete all Tutorials from the database.
-exports.deleteAll = (req, res) => {
-  
-};
-
-// Find all published Tutorials
-exports.findAllPublished = (req, res) => {
-  
+module.exports = {
+  getUsers,
+  createUser,
+  getUserById,
 };
