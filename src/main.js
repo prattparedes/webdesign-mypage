@@ -13,14 +13,17 @@ import RegisterPage from "./components/RegisterPage.vue";
 const routes = [
   {
     path: "/",
+    name:"home",
     component: HomePage,
   },
   {
     path: "/login",
+    name:"LogIn",
     component: LoginPage,
   },
   {
     path: "/register",
+    name:"Register",
     component: RegisterPage,
   },
 ];
