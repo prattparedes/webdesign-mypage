@@ -25,7 +25,7 @@ const createUser = async (req, res) => {
       `INSERT INTO accounts (name, email, password) VALUES ('${user.name}', '${user.email}', '${user.password}')`,
     );
   console.log(response);
-  res.send("user created successfully" + response.rows);
+  res.send("user created successfully");
 };
 
 module.exports = {
